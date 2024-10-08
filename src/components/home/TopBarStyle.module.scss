@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    height: 10%;
+    background-color: #273142;
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-height: 70px;
+    // border-bottom: 1px solid white;
+    box-shadow: 0px 2px 20px 1px black;
+    display: flex;
+    z-index: 6;
+}
+
+.containerLogo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.logo {
+    height: 30%;
+    min-width: 100px;
+}
+
+.containerRight {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.containerInputSearch {
+    width: 50%;
+    height: 50%;
+    background-color: #323D4E;
+    padding: 0 5px;
+    margin-left: 10px;
+    border-radius: 19px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    &:focus-within {
+        border: 1px solid #ffffff; 
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+    }
+    .inputSearch {
+        width: 85%;
+        border: none;
+        background-color: transparent;
+        margin-left: 5px;
+        outline: none;
+        box-shadow: none;
+        color: white;
+        &::placeholder{
+            color: white;
+        }
+    }
+    
+}
+
+.avatar{
+    background-color: white;
+    height: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.iconArrowDown{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    cursor: pointer;
+}
